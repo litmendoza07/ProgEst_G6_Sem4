@@ -1,4 +1,4 @@
-#Leer la edad de una persona y decir si es menor o mayor de edad 
+#El pago se retorna para poder utlizarlo fuera de función
 age = 0
 def readAge():
     print("Dime tu edad: ")
