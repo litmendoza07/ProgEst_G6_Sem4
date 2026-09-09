@@ -12,7 +12,7 @@ def clasificar_nota(note):
         return "Nota inválida"
 
 
-def programa():
+def program():
     notes = []
     cantidad = int(input("¿Cuántas notas desea ingresar? "))
 
