@@ -24,4 +24,4 @@ def programa():
     for note in notes:
         print(f"{note} - {clasificar_nota(note)}")
 
-programa()
+program()
