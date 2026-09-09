@@ -1,11 +1,12 @@
 import notas
 
+
 def pedir_notas():
     cantidad = int(input("¿Cuántas notas desea ingresar? "))
     lista_notas = []
 
     for i in range(cantidad):
-        nota = float(input(f"Ingrese la nota {i + 1}: "))
+        nota = float(input(f"Digite la nota {i + 1}: "))
         lista_notas.append(nota)
 
     return lista_notas
@@ -16,7 +17,7 @@ def mostrar_notas(lista_notas):
         print("\nNo hay notas ingresadas.")
         return
 
-    notas_clasificadas = notas.clasificar_notas(lista_notas)
+    notas_clasificadas = notas.classify_notes(lista_notas)
 
     print("\nNotas ingresadas:")
     for nota, clasificacion in notas_clasificadas:
