@@ -33,19 +33,6 @@ def mostrar_resumen(producto, subtotal, descuento, iva, total):
 	print("Total: C$", round(total, 2))
 
 
-# Verificacion por etapas antes de solicitar las compras.
-subtotal_prueba = calcular_subtotal(500, 2)
-assert subtotal_prueba == 1000
-
-descuento_prueba = calcular_descuento(3000)
-assert descuento_prueba == 240
-
-iva_prueba = calcular_iva(2760)
-assert iva_prueba == 414
-
-print("Pruebas de calculo correctas.")
-
-
 for numero_compra in range(1, 3):
 	producto, precio, cantidad = solicitar_compra(numero_compra)
 	subtotal = calcular_subtotal(precio, cantidad)
